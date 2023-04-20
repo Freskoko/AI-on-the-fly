@@ -1,7 +1,7 @@
 # AI-on-the-fly
 Run main.py, talk in your microphone, har an ai answer your questions in seconds! (OpenAI whsiper/chatgpt4/keyboard/gTTS/pyaudio)
 
-#How to setup
+# How to setup
 
 - download requirements
 
@@ -11,7 +11,7 @@ Run main.py, talk in your microphone, har an ai answer your questions in seconds
 
 - listen! :)
 
-#How to make a shortcut?
+# How to make a shortcut?
 
 -right click openTalker.bat, click "create shortcut" and place it on your dekstop
 
