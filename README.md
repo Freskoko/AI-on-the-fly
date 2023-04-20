@@ -5,7 +5,7 @@ Run main.py, talk in your microphone, har an ai answer your questions in seconds
 
 - download requirements
 
-- create a .env in the base directory and add your "OPENAI_API_KEY"
+- create a .env in the base directory and add your "OPENAI_API_KEY", and add your Canvas api key in "cal_key"
 
 - run the file and press r to talk, and let go of r when you are done
 
