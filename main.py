@@ -8,8 +8,8 @@ import pyaudio
 import wave
 import io
 import keyboard
-import threading
-import time
+from cal_events import get_clean_events
+#TODO have the bot know my calender events. what the weather is like and bysykkel, repo trending
 
 load_dotenv()
 
@@ -18,10 +18,12 @@ openai.api_key = apikey
 
 def ask_question(question):
 
+    events = (get_clean_events())
+
     response = openai.ChatCompletion.create(
         model="gpt-4", #model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": f"You are a helpful assistant that answers a question, in a consice and to the point matter"},
+            {"role": "system", "content": f"You are a helpful assistant to me, that answers a question, in a consice and to the point matter. Currently my calender for today looks like this:{events}"},
             {"role": "user", "content": f"Generate an answer to the question: {question} answer in one or two sentences, make it interesting!"}
         ],
         temperature=0.95,
